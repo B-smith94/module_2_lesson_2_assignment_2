@@ -7,4 +7,8 @@ if place == "forest": #need to change = to ==
     else: #remove variable--not needed for else statement
         print("You found a boat!")
 elif place == "cave": #change = to ==
-    print("You find a hidden treasure!")
+    action = input("Do you light a torch or proceed in the dark? ")
+    if action == "light a torch":
+        print("You easily spot the treasure in the now well-lit cavern!")
+    else:
+        print("You fumble in the dark for hours but cannot find a way forward.")
